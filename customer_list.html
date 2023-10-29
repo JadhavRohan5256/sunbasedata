@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer List</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/customer_list.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class='customer-wrapper'>
+        <div class='customer'>
+            <div class='customer-top'>
+                <a href="/customer_details.html" class="add-btn">Add Customer</a>
+                <span>Customer List</span>
+            </div>
+            <div class='table-container'>
+                <table class='table-wrapper'>
+                    <thead>
+                        <tr>
+                            <th>
+                                <span>First Name</span>
+                                <span>
+                                    <i class="fa-solid fa-chevron-up icons" onclick="iconsHandler(this, 'first_name')">
+                                    </i>
+                                    <i class="fa-solid fa-chevron-down icons"
+                                        onclick="iconsHandler(this, 'first_name')">
+                                    </i>
+                                </span>
+                            </th>
+                            <th>
+                                <span>Last Name</span>
+                                <span>
+                                    <i class="fa-solid fa-chevron-up icons" onclick="iconsHandler(this, 'last_name')">
+                                    </i>
+                                    <i class="fa-solid fa-chevron-down icons" onclick="iconsHandler(this, 'last_name')">
+                                    </i>
+                                </span>
+                            </th>
+                            <th>
+                                <span>Address</span>
+                                <span>
+                                    <i class="fa-solid fa-chevron-up icons" onclick="iconsHandler(this, 'address')">
+                                    </i>
+                                    <i class="fa-solid fa-chevron-down icons" onclick="iconsHandler(this, 'address')">
+                                    </i>
+                                </span>
+                            </th>
+                            <th>
+                                <span>City</span>
+                                <span>
+                                    <i class="fa-solid fa-chevron-up icons" onclick="iconsHandler(this, 'city')">
+                                    </i>
+                                    <i class="fa-solid fa-chevron-down icons" onclick="iconsHandler(this, 'city')">
+                                    </i>
+                                </span>
+                            </th>
+                            <th>
+                                <span>State</span>
+                                <span>
+                                    <i class="fa-solid fa-chevron-up icons" onclick="iconsHandler(this, 'state')">
+                                    </i>
+                                    <i class="fa-solid fa-chevron-down icons" onclick="iconsHandler(this, 'state')">
+                                    </i>
+                                </span>
+                            </th>
+                            <th>
+                                <span>Email</span>
+                                <span>
+                                    <i class="fa-solid fa-chevron-up icons" onclick="iconsHandler(this, 'email')">
+                                    </i>
+                                    <i class="fa-solid fa-chevron-down icons" onclick="iconsHandler(this, 'email')">
+                                    </i>
+                                </span>
+                            </th>
+                            <th>
+                                <span>Phone</span>
+                                <span>
+                                    <i class="fa-solid fa-chevron-up icons" onclick="iconsHandler(this, 'phone')">
+                                    </i>
+                                    <i class="fa-solid fa-chevron-down icons" onclick="iconsHandler(this, 'phone')">
+                                    </i>
+                                </span>
+                            </th>
+                            <th>
+                                <span>Action</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <span class="loader"></span>
+		<div class="theme-wrapper">
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/customer_list.js"></script>
+</body>
+
+</html>

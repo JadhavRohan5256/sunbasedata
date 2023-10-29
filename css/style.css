@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200;1,300;1,400&family=Rubik:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+:root {
+  /* fonts  */
+  --poppins: 'Poppins', sans-serif;
+  --rubik: 'Rubik', sans-serif;
+}
+
+:root {
+  --primary-color: #2196F3;
+  --secondary-color: #BB86FC; 
+  --third-color: #2196F3;
+  --card-hover: #2196f38a;
+
+  --error-bg: #CF6679;
+	--error-color: #ffffff;
+  --error-border-color: #f5c6cb;
+	
+	--success-bg: #4CAF50;
+	--success-color: #ffffff;
+  --success-border-color: #c3e6cb;
+}
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    font-family: var(--rubik);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--bg-surface);
+}
+
+
+
+/* loader css */
+.loader {
+  border-radius: 50%;
+  border: 3px solid;
+  border-color: var(--primary-color) var(--primary-color) transparent transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.loader::after,
+.loader::before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px solid;
+  border-color: transparent transparent var(--secondary-color) var(--secondary-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotationBack 0.5s linear infinite;
+  transform-origin: center center;
+}
+
+.loader::before {
+  width: 32px;
+  height: 32px;
+  border-color: var(--third-color) var(--third-color) transparent transparent;
+  animation: rotation 1.5s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+/* TOAST WRAPPER CSS START */
+.toast-wrapper {
+	position: absolute;
+	right: 5%;
+	top: 20px;
+	max-width: 500px;
+	max-height: calc(100vh - 80px);
+	display: flex;
+	flex-direction: column-reverse;
+	overflow-y: auto;
+	padding-right: 0.5rem;
+	z-index: 3000;
+}
+
+
+.toast-wrapper::-webkit-scrollbar {
+	height: 3px;
+	width: 3px;
+}
+
+.toast-wrapper::-webkit-scrollbar-thumb {
+	background-color: var(--primary-color);
+}
+
+.toast-wrapper::-webkit-scrollbar-track {
+	background-color: var(--bg-color);
+}
+
+.toast {
+	position: relative;
+	width: 100%;
+	margin: 0.5rem 0;
+	z-index: 200;
+}
+
+.toast-message {
+	padding-right: 1rem !important;
+}
+
+.close-toast {
+	position: absolute;
+	right: 4px;
+	top: 2px;
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+
+.error-message {
+	background-color: var(--error-bg);
+	color: var(--error-color);
+	padding: 1rem;
+  border-radius: 5px;
+}
+
+.success-message {
+  background-color: var(--success-bg);
+	color: var(--success-color);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.theme-wrapper {
+  position: absolute;
+  left: 3rem;
+  top: 1rem;
+}
+
+#icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#icon:hover {
+  opacity: 0.8;
+}
+
+.rotate {
+  animation: rotate 4s forwards infinite linear;
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/customer_details.css">
+</head>
+<body>
+    <div class="customer-wrapper">
+        <div class="customer-details">
+            <h2>Customer Details</h2>
+            <form  class="customer-form">
+                <div class="two-column">
+                    <input 
+                        type="text" 
+                        name="first_name" 
+                        id="first_name"
+                        placeholder="First Name"
+                    />
+                    <input 
+                        type="text" 
+                        name="last_name" 
+                        id="last_name"
+                        placeholder="Last Name"
+                        />
+                    </div>
+                <div class="two-column">
+                    <input 
+                        type="text" 
+                        name="street" 
+                        id="street"
+                        placeholder="Street"
+                    />
+                    <input 
+                        type="text" 
+                        name="address" 
+                        id="address"
+                        placeholder="Address"
+                        />
+                    </div>
+                    <div class="two-column">
+                        <input 
+                            type="text" 
+                            name="city" 
+                            id="city"
+                            placeholder="City"
+                        />
+                    <input 
+                        type="text" 
+                        name="state" 
+                        id="state"
+                        placeholder="State"
+                    />
+                </div>
+                <div class="two-column">
+                    <input 
+                        type="text" 
+                        name="email" 
+                        id="email"
+                        placeholder="Email"
+                    />
+                    <input 
+                        type="text" 
+                        name="phone" 
+                        id="phone"
+                        placeholder="Phone"
+                    />
+                </div>
+
+                <div class="two-column">
+                    <button class="submit-btn" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <span class="loader"></span>
+		<div class="toast-wrapper"></div>
+        <div class="theme-wrapper">
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/customer_details.js"></script>
+</body>
+</html>
