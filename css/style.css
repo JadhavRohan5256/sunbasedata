@@ -175,9 +175,7 @@
 }
 
 .theme-wrapper {
-  position: absolute;
-  left: 3rem;
-  top: 1rem;
+  margin-bottom: 2rem;
 }
 
 #icon {
@@ -204,4 +202,10 @@
   }
 }
 
+
+@media only screen and (max-width: 500px) {
+  .theme-wrapper {
+    margin-bottom: 1rem;
+  }
+}
 

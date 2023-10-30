@@ -108,13 +108,13 @@ const toast = (messageType, messageDesc) => {
     p.classList.add('toast-message');
     p.textContent = messageDesc;
     div.appendChild(p);
-    toast_wrapper.appendChild(div);
+    toast_wrapper?.appendChild(div);
 }
 
 const toastTimeOut = () => {
     setInterval(() => {
-        if (toast_wrapper.firstChild !== null) {
-            toast_wrapper.removeChild(toast_wrapper.firstChild);
+        if (toast_wrapper?.firstChild !== null) {
+            toast_wrapper?.removeChild(toast_wrapper.firstChild);
         }
     }, 3000)
 }
